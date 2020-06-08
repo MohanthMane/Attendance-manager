@@ -1,0 +1,9 @@
+{
+  "liveshare.publishWorkspaceInfo": true,
+  "liveshare.languages.allowGuestCommandControl": true,
+  "liveshare.account": "Mohanth",
+  "liveshare.accountProvider": "Github",
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.guestApprovalRequired": true
+}

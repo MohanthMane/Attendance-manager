@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "887464538312",
+    "firebase_url": "https://attendance-manager-vnr.firebaseio.com",
+    "project_id": "attendance-manager-vnr",
+    "storage_bucket": "attendance-manager-vnr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887464538312:android:479298cafc531d1790f5fd",
+        "android_client_info": {
+          "package_name": "com.vnr.attendance_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887464538312-o10p9hs2d6n06p1eldit98q3sjhv35ep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-KcwggbLwAYnbG-0j61j9X9tdblH2lek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887464538312-o10p9hs2d6n06p1eldit98q3sjhv35ep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
