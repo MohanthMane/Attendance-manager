@@ -111,9 +111,10 @@ class HomeState extends State<Home> {
                   Subject subject = Subject.fromJson(allSubjects[index]);
                   int total = subject.present + subject.absent;
 
-                  double percent = (total != 0)
-                      ? ((subject.present * 100 / total)).round().toDouble()
-                      : 0;
+                  double percent =
+                      (total != 0) ? ((subject.present * 100 / total)) : 0;
+                  percent = double.parse(percent.toStringAsFixed(2));
+
                   var color = (percent < 75.0) ? Colors.red : Colors.black;
                   return ListTile(
                     title: Text(

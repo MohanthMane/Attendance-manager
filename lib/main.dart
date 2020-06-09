@@ -14,17 +14,15 @@ void main() async {
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Attendance Manager",
-      debugShowCheckedModeBanner: false,
-      home: LandingPage(),
-      routes: {
-        'home': (context) => Home(),
-        'landingpage': (context) => LandingPage(),
-      }
-    );
+        title: "Attendance Manager",
+        debugShowCheckedModeBanner: false,
+        home: LandingPage(),
+        routes: {
+          'home': (context) => Home(),
+          'landingpage': (context) => LandingPage(),
+        });
   }
 }
-
 
 class LandingPage extends StatefulWidget {
   @override
@@ -41,8 +39,7 @@ class _LandingPageState extends State<LandingPage> {
           FirebaseUser user = snapshot.data;
           if (user == null) {
             return Login();
-          }
-          else
+          } else
             return Home();
         } else if (snapshot.connectionState == ConnectionState.waiting) {
           return Scaffold(

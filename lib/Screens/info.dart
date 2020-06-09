@@ -16,8 +16,10 @@ class Info extends StatelessWidget {
     this.total = this.present + this.absent;
 
     this.percentage = (this.total != 0)
-        ? ((this.present * 100 / this.total)).round().toDouble()
+        ? ((this.present * 100 / this.total))
         : 0;
+    
+    this.percentage = double.parse(this.percentage.toStringAsFixed(2));
   }
 
   @override

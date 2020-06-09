@@ -20,10 +20,17 @@ dependencies:
   firebase_database: ^3.1.5
   http: ^0.12.0+2
   cupertino_icons: ^0.1.3
+  flutter_launcher_icons:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/attendance.png"
+  image_path_android: "assets/attendance.png"
 
 flutter:
   uses-material-design: true

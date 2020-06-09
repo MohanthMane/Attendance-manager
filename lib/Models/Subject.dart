@@ -13,17 +13,13 @@ class Subject {
       : name = snapshot.value["name"],
         present = snapshot.value["present"],
         absent = snapshot.value["absent"];
-    
-  Subject.fromJson(LinkedHashMap<dynamic,dynamic> data)
+
+  Subject.fromJson(LinkedHashMap<dynamic, dynamic> data)
       : name = data["name"],
         present = data["present"],
         absent = data["absent"];
-        
+
   toJson() {
-    return {
-      "name": name.toUpperCase(),
-      "present": present,
-      "absent": absent
-    };
+    return {"name": name.toUpperCase(), "present": present, "absent": absent};
   }
 }

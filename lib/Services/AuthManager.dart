@@ -24,16 +24,16 @@ Future<FirebaseUser> signInWithGoogle() async {
 
   final FirebaseUser currentUser = await _auth.currentUser();
   assert(user.uid == currentUser.uid);
-  
+
   var ref = Firestore.instance.collection('users').document(user.email);
   var subjects = [];
-  
+
   await ref.get().then((snapshot) async {
-    if(!snapshot.exists) {
+    if (!snapshot.exists) {
       await ref.setData({'subjects': subjects, 'email': user.email});
     }
   });
-  
+
   return user;
 }
 
@@ -48,6 +48,6 @@ signOutGoogle(context) async {
 
 getCurrentUser() async {
   FirebaseUser user = await _auth.currentUser();
-  
+
   return user;
 }
